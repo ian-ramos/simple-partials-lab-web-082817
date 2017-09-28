@@ -1,0 +1,15 @@
+<%= form_for @student do |f|%> <!-- copy entire form (unlike lesson) b/c both forms are exactly the same.  In the lesson, the form_tag was different b/c of the path -->
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :hometown %>
+    <%= f.text_field :hometown %>
+  </p>
+  <p>
+    <%= f.label :birthday %>
+    <%= f.date_field :birthday %>
+  </p>
+    <%= f.submit %>
+<% end %>
